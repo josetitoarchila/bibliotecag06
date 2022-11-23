@@ -2,12 +2,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Pagina de prueba</title>
 </head>
 <body>
-<h1>hola mundo realice cambios</h1>
+    <!--ejemplo cabecera pagina-->
+    <div style="background-color:aqua ; width: 100%;">
+        <div style="background-color:brown; width: 50%; height: 100px; float:inline-start" >
+            <a href="https://biblioteca.uniandes.edu.co/">
+                <img src="img/logo.png" alt="texto imagen" />
+            </a>
+        </div>
+        <a href="https://biblioteca.uniandes.edu.co/">
+            <div style="background-color:blueviolet; width: 50%; height: 100px; float:inline-start">
+                <h1>TITULO EN HEADER</h1>
+            </div>
+        </a>
+        <div style="background-color:antiquewhite; width: 100%; height: 100px;float:inline-start">
+            <nav>
+                <ul>
+                    <li>Menu 1</li>
+                    <li>Menu 2</li>
+                    <li>Menu 3</li>
+                    <li>Menu 4</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--ejemplo parte principal pagina ejemplo formularios-->
+    <main style="background-color:bisque ; text-align: center;">
+        <a href="https://biblioteca.uniandes.edu.co/" target="_top">Enlace a biblioteca uniandes</a>
+        <h2>TITULO DE FORMULARIO</h2>
+        <form id="formulario_libros">
+            <label for="nombre_libro">Nombre Libro</label>
+            <input type="text" name="nombre_libro" id="nombre_libro" size=50 maxlength="10" placeholder="ingresar nombre libro" required />
+            <br /><br />
+            <label for="numero_libro">Numero interno</label>
+            <input type="number" name="numero_libro" id="numero_libro" size=50 maxlength="10" min=2 max=1000 required />
+            <br /><br />
+            <label for="autor">Autor</label>
+            <select id="autor" name="autor"> 
+                <option value="1">Gabriel garcia marquez</option>
+                <option value="2">Mario Benedetti</option>
+
+            </select>
+            <br /><br />
+            <label for="genero">Genero Libro</label>
+            <br /><br />
+            <label>Novela</label><input type="radio" name="genero" value="Novela" />
+            <label>Poesia</label><input type="radio" name="genero" value="Poesia" />
+            <br /><br />
+            <label for="genero">Genero Libro</label>
+            <br /><br />
+            <label>Novela</label><input type="checkbox" name="genero2" value="Novela" />
+            <label>Poesia</label><input type="checkbox" name="genero2" value="Poesia" />
+
+
+            <br /><br />
+            <button>Guardar</button>
+            <input type="button" value="Boton Guardar 1" />
+            <input type="submit" value="Boton Guardar 2" />
+            <br /><br /><br />
+        </form>
+    </main>
+
+
+    <div style="text-align:center; align-items:center">
+        <h2 >TABLA DE EJEMPLO</h2>
+        <table>
+            <tr style="background-color:#808080">
+                <th>columna 1</th>
+                <th>columna 2</th>
+                <th>columna 3</th>
+                <th>columna 4</th>
+            </tr>
+            <tr>
+                <td>Valor 1</td>
+                <td>Valor 2</td>
+                <td>Valor 3</td>
+                <td>Valor 4</td>
+            </tr>
+            <tr>
+                <td>Valor 1</td>
+                <td>Valor 2</td>
+                <td>Valor 3</td>
+                <td>Valor 4</td>
+            </tr>
+
+        </table>
+    </div>
+    <!--informacion del grupo como integrantes, red social, direccion, telefonos-->
+    <footer style="background-color:azure;">
+        <h2>REDES SOCIALES</h2>
+
+    </footer>
 </body>
 </html>
