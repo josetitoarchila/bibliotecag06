@@ -6,27 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
     <title>Pagina de prueba</title>
+    <link rel="stylesheet" href="estilos/index.css" />
 </head>
 <body>
     <!--ejemplo cabecera pagina-->
     <div style="background-color:aqua ; width: 100%;">
-        <div style="background-color:brown; width: 50%; height: 100px; float:inline-start" >
+        <!--caja donde sed va a colocar el logo-->
+        <div class="caja_logo" >
             <a href="https://biblioteca.uniandes.edu.co/">
                 <img src="img/logo.png" alt="texto imagen" />
             </a>
         </div>
-        <a href="https://biblioteca.uniandes.edu.co/">
-            <div style="background-color:blueviolet; width: 50%; height: 100px; float:inline-start">
-                <h1>TITULO EN HEADER</h1>
-            </div>
-        </a>
-        <div style="background-color:antiquewhite; width: 100%; height: 100px;float:inline-start">
+        <div class="caja_titulo">
+            <h1 class="titulo1">TITULO EN HEADER</h1>
+        </div>
+
+        <div class="estilo_menu">
             <nav>
                 <ul>
-                    <li>Menu 1</li>
-                    <li>Menu 2</li>
-                    <li>Menu 3</li>
-                    <li>Menu 4</li>
+                    <li><a href="#">Libros</a></li>
+                    <li><a href="#">Socios</a></li>
+                    <li><a href="#">Autores</a></li>
+                    <li><a href="#">Prestamos</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,7 +35,7 @@
     <!--ejemplo parte principal pagina ejemplo formularios-->
     <main style="background-color:bisque ; text-align: center;">
         <a href="https://biblioteca.uniandes.edu.co/" target="_top">Enlace a biblioteca uniandes</a>
-        <h2>TITULO DE FORMULARIO</h2>
+        <h1 class="titulo2">TITULO DE FORMULARIO</h1>
         <form id="formulario_libros">
             <label for="nombre_libro">Nombre Libro</label>
             <input type="text" name="nombre_libro" id="nombre_libro" size=50 maxlength="10" placeholder="ingresar nombre libro" required />
