@@ -23,10 +23,8 @@ body{
 }
 .titulo2{
     color:black;
+    text-align: center;
 }
-#formulario_libros{
-    background-color: lightblue; 
-}    
 
 .estilo_main{
     background-color: darkorchid;
@@ -34,7 +32,7 @@ body{
 
 
 .estilo_menu{
-    background-color:antiquewhite; 
+    /*background-color:antiquewhite; */
     width: 100%; 
     height: 100px;
     float:inline-start;
@@ -64,3 +62,150 @@ nav{
     text-align: center;
 }
 
+/*main{
+    text-align: center;
+}*/
+
+/*formulario*/
+#formulario_libros{
+    /*background-color: lightblue; */
+    margin-left: 32%;
+
+
+}    
+
+label{
+    width: 200px;
+    display:inline-block;
+}
+
+.input-form{
+    width: 400px;
+}
+
+.boton_formulario{
+    width: 300px;
+    height: 40px;
+    background-color: cornflowerblue;
+    border-width: 1px;
+    border-color: cornflowerblue;
+
+}
+
+/*tabla*/
+.tabla{
+    width: 80%;
+        
+}
+table, th, td{
+    border: 1px solid #000;
+    
+}
+
+/*caja publicidad*/
+.caja-publicidad{
+    width: 100;
+    height: 220px;
+    background-color:antiquewhite;
+}
+
+.caja-publicidad1{
+    width: 33%;
+    height: 220px;
+    background-color: aquamarine;
+    margin-right: 5px;
+    float: left;
+}
+.caja-publicidad2{
+    background-color: deepskyblue;
+    margin-right: 5px;
+}
+.caja-publicidad3{
+    background-color:lightblue;
+    margin-right: 5px;
+}
+.caja-superior{
+    width: 100%;
+    height: 60px;
+    background-color: blueviolet;
+}
+
+.caja-superior1{
+    width: 70%;
+    height: 60px;
+    background-color: orange;
+    float:left;
+    position: relative;
+}
+.caja-superior1 h3{
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.caja-superior2{
+    width: 30%;
+    height: 60px;
+    background-color: yellow;
+    float:left;
+    position: relative;
+}
+
+.caja-superior2 span{
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.caja-media{
+    width: 100%;
+    height: 120px;
+    background-color: blue;
+}
+
+.caja-media1{
+    width: 50%;
+    height: 120px;
+    background-color: aqua;
+    float: left;
+
+}
+
+
+.caja-media2{
+    width: 50%;
+    height: 120px;
+    background-color: azure;
+    float: left;
+}
+
+.caja-inferior{
+    width: 100%;
+    height: 40px;
+    background-color:beige;
+    position: relative;
+}
+
+h3{
+    
+    font-family: 'Lora', serif;
+}
+
+.boton-caja{
+    width: 30%;
+    height: 30px;
+    background-color: orangered;
+    color: white;
+    border-color: orangered;
+}
+
+.caja-inferior button{
+    position: absolute;
+    left: 85%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
