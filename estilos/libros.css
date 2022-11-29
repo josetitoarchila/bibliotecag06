@@ -1,0 +1,40 @@
+/*header*/
+
+.columna_uno{
+    /*background-color: cornflowerblue;*/
+    height: 120px;
+
+}
+.columna_dos{
+/*    background-color:aquamarine;*/
+    height: 120px;
+    
+}
+
+.titulo1{
+    color:orangered;
+    font-size:30px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+div{
+    position: relative;
+}
+nav{
+    height: 50px;
+}
+div ul{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.btn-primary{
+    width: 40%;
+}
+
+
+
+/*fin header*/
