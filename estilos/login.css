@@ -1,0 +1,50 @@
+.estilo_h3{
+    text-align: center;
+}
+.caja1{
+
+    height: 60px;
+}
+
+
+.caja2{
+
+    height: 60px;
+}
+.caja3
+{
+
+height: 60px;
+}
+
+.caja1logo{
+    
+    height: 120px;
+}
+
+
+.caja2logo{
+    height: 120px;
+    
+    position: relative;
+
+}
+
+.caja2logo img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.caja3logo
+{
+    height: 120px;
+
+}
+
+.caja_login{
+    position: relative;
+}
+
+

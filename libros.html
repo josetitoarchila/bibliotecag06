@@ -17,54 +17,102 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 col-xl-6 columna_uno">
+            <div class="col-12 col-md-6 columna_uno">
                <img src="/img/logo.png" alt="biblioteca g06">
             </div>
-            <div class="col-12 col-md-6 col-xl-6 columna_dos">
+            <div class="col-12 col-md-6 columna_dos">
                <h1 class="titulo1">BIBLIOTECA G06</h1>
             </div>
+            <div class="col-12 col-md-12 columna_tres">
+                <!--<nav  class="navbar" style="background-color: #e3f2fd; align-items: center;">-->
+                    <!-- Navbar content -->
+                <nav  class="navbar navbar-dark bg-primary" style="align-items: center;">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link" href="#">Libros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Socios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Autores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Prestamos</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
         </div>
     </div>
-    <div class="container">
-        <nav  class="navbar" style="background-color: #e3f2fd; align-items: center;">
-            <!-- Navbar content -->
-            <ul class="nav justify-content-end">
-                <li class="nav-item"><a class="nav-link" href="#">Libros</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Socios</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Autores</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Prestamos</a></li>
-            </ul>
-        </nav>
-    </div>  
     <br />
     <div class="container">
         <div class="row">
             <h1 class="titulo2">TITULO DE FORMULARIO</h1>
-            <form id="formulario_libros">
-                <div class="form-group">
-                    <label for="nombre_libro">Nombre Libro</label>
-                    <input class="form-control" type="text" name="nombre_libro" id="nombre_libro" size=50 maxlength="10" placeholder="ingresar nombre libro" required />
+            <div class="col-12 col-md-2"></div>
+            <div class="col-12 col-md-8">
+                <form id="formulario_libros">
+                    <div class="form-group">
+                        <label for="nombre_libro">Nombre Libro</label>
+                        <input class="form-control" type="text" name="nombre_libro" id="nombre_libro" size=50 maxlength="10" placeholder="ingresar nombre libro" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="numero_libro">Numero interno</label>
+                        <input class="form-control" type="number" name="numero_libro" id="numero_libro" size=50 maxlength="10" min=2 max=1000 required />
+                    </div>
+                    <div class="form-group">
+                        <label for="numero_libro">Numero interno</label>
+                        <select class="form-control" id="autor" name="autor"> 
+                            <option value="1">Gabriel garcia marquez</option>
+                            <option value="2">Mario Benedetti</option>
+            
+                        </select>
+                    </div>
+                    <br />
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                    <button type="button" class="btn btn-primary">Cancelar</button>
+                    <br /><br /><br />
+                </form>
+            </div>
+            <div class="col-12 col-md-2"></div>
+
+
+            
+        </div>
+    </div>
+    <br /><br />
+    <div class="container">
+        <div class="row">
+                <div class="col-0 col-md-1"></div>
+                <div class="col-12 col-md-10">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                      </table>
                 </div>
-                <div class="form-group">
-                    <label for="numero_libro">Numero interno</label>
-                    <input class="form-control" type="number" name="numero_libro" id="numero_libro" size=50 maxlength="10" min=2 max=1000 required />
-                </div>
-                <div class="form-group">
-                    <label for="numero_libro">Numero interno</label>
-                    <select class="form-control" id="autor" name="autor"> 
-                        <option value="1">Gabriel garcia marquez</option>
-                        <option value="2">Mario Benedetti</option>
-        
-                    </select>
-                </div>
-                <br />
-                <button type="button" class="btn btn-primary">Guardar</button>
-                <button type="button" class="btn btn-primary">Cancelar</button>
-                <br /><br /><br />
-            </form>
+                <div class="col-0 col-md-1"></div>
         </div>
     </div>
 
+   
 
 </body>
 </html>
