@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Libros</title>
+    <link rel="stylesheet" href="estilos/libros.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Dosis:wght@300&family=Lora:wght@400;500&family=Montserrat+Alternates:wght@300&family=Mulish:wght@300&family=Varela+Round&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 columna_uno">
+               <img src="/img/logo.png" alt="biblioteca g06">
+            </div>
+            <div class="col-12 col-md-6 columna_dos">
+               <h1 class="titulo1">BIBLIOTECA G06</h1>
+            </div>
+            <div class="col-12 col-md-12 columna_tres">
+                <!--<nav  class="navbar" style="background-color: #e3f2fd; align-items: center;">-->
+                    <!-- Navbar content -->
+                <nav  class="navbar navbar-dark bg-primary" style="align-items: center;">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link" href="#">Libros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Socios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Autores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Prestamos</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </div>
+    </div>
+    <br />
+    
+    <div class="container">
+        <div class="row">
+            <h1 class="titulo2">CALCULADORA</h1>
+            <div class="col-12 col-md-2"></div>
+            <div class="col-12 col-md-8">
+                <form id="formulario_libros" onsubmit="return false">
+                    <div class="form-group">
+                        <label for="nombre_libro">Número 1</label>
+                        <input class="form-control" type="number" name="numero1" id="numero1" size=50 maxlength="10" placeholder="ingresar numero 1" />
+                    </div>
+                    <div class="form-group">
+                        <label for="numero_libro">Numero 2</label>
+                        <input class="form-control" type="number" name="numero2" id="numero2" size=50 maxlength="10" min=2 max=1000 placeholder="ingresar numero 2" />
+                    </div>
+                    <br />
+                    <button type="submit" class="btn btn-primary" onclick="calcular()">Calcular</button>
+                    <button type="submit" class="btn btn-primary">Cancelar</button>
+                    <br /><br /><br />
+                </form>
+            </div>
+            <div class="col-12 col-md-2"></div>
+
+
+            
+        </div>
+    </div>
+    <br /><br />
+    <div class="container">
+        <div class="row">
+                <div class="col-0 col-md-1"></div>
+                <div class="col-12 col-md-10">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                <div class="col-0 col-md-1"></div>
+        </div>
+    </div>
+
+    <script src="/js/calculadora.js"></script>
+</body>
+</html>

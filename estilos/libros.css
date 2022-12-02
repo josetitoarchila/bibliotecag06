@@ -75,6 +75,11 @@ li a{
 }
 
 
+.arreglo_centrar{
+    text-align: center !important;
+    color:crimson;
+}
+
 
 
 /*fin formulario*/
