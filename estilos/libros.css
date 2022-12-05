@@ -80,6 +80,10 @@ li a{
     color:crimson;
 }
 
+.borde_caja_texto{
+    border-color: orange;
+}
+
 
 
 /*fin formulario*/

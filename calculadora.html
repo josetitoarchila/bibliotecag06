@@ -50,14 +50,19 @@
                     <div class="form-group">
                         <label for="nombre_libro">Número 1</label>
                         <input class="form-control" type="number" name="numero1" id="numero1" size=50 maxlength="10" placeholder="ingresar numero 1" />
+                        <p id="parrafo_validar_numero1"></p>
                     </div>
                     <div class="form-group">
                         <label for="numero_libro">Numero 2</label>
                         <input class="form-control" type="number" name="numero2" id="numero2" size=50 maxlength="10" min=2 max=1000 placeholder="ingresar numero 2" />
-                    </div>
+                        <p id="parrafo_validar_numero2"></p>                    
+                    </div>  
+
                     <br />
-                    <button type="submit" class="btn btn-primary" onclick="calcular()">Calcular</button>
-                    <button type="submit" class="btn btn-primary">Cancelar</button>
+                    <input type="submit" id="btnCalcular" class="btn btn-primary" onclick="calcular()" value="Calcular"></input>
+                    <button type="submit" id="btnCancelar" class="btn btn-primary">Cancelar</button>
+                    <br />
+                    <div id="caja_sumar" class="p-3 mb-2 bg-danger text-white"></div>
                     <br /><br /><br />
                 </form>
             </div>
@@ -68,7 +73,12 @@
         </div>
     </div>
     <br /><br />
-    <div class="container">
+    <div style="text-align:center">
+        <p>Parrafo ejemplo 1</p>
+        <p>Parrafo ejemplo 2</p>
+        <p>Parrafo ejemplo 3</p>
+    </div>
+        <div class="container">
         <div class="row">
                 <div class="col-0 col-md-1"></div>
                 <div class="col-12 col-md-10">
